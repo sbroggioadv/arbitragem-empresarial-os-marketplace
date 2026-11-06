@@ -7,7 +7,7 @@ description: "Configura o Arbitragem Empresarial OS para o advogado de UMA parte
 
 # Instalação — arbitragem empresarial
 
-**Guidance only:** configurar não prova acesso à pasta, sigilo, vigência de regulamento nem revisão jurídica. Suporte: **luis@sbroggio.io**.
+**Guidance only:** configurar não prova acesso à pasta, sigilo, vigência de regulamento nem revisão jurídica. Suporte: pelo e-mail indicado no manual do produto e na LICENCA.
 
 ## Regras da instalação
 

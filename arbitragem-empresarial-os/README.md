@@ -1,6 +1,6 @@
 # Arbitragem Empresarial OS
 
-`arbitragem-empresarial-os` · versão 0.1.0 · Sbroggio Advocacia & IA Combativa · suporte: **luis@sbroggio.io**
+`arbitragem-empresarial-os` · versão 0.1.0 · Sbroggio Advocacia & IA Combativa · suporte pelo e-mail indicado no manual do produto e na [LICENCA](LICENCA)
 
 Plugin para o **advogado de uma parte** — requerente **ou** requerida — em arbitragem empresarial com sede no Brasil. Cobre o percurso enquadramento → instituição → tribunal e Termo → prova e audiência → sentença → apoio judicial, com cada prazo, custo e procedimento ligado a uma fonte local e a um evento (lei, convenção, regulamento e versão, Termo ou ordem).
 
@@ -12,7 +12,7 @@ A distribuição é pelo **marketplace GitHub público**, no modelo da família 
 - **Claude Code:** `claude plugin marketplace add sbroggioadv/arbitragem-empresarial-os-marketplace` e `claude plugin install arbitragem-empresarial-os@arbitragem-empresarial-os-marketplace`. No Claude Code os comandos levam o prefixo do plugin, como `/arbitragem-empresarial-os:arbitragem-empresarial-install`.
 - Não instale por upload de ZIP no Cowork nem distribua ZIP do plugin ao cliente como forma de instalação: há histórico de rejeição opaca ("Plugin validation failed") na família. O pacote do produto (manual em PDF e capa) não instala o plugin.
 
-**O plugin não foi testado no Cowork nativo**: foi verificado localmente por linha de comando com casos fictícios. A renderização dos botões e o comportamento no app dependem do ambiente. Se a instalação falhar, registre a mensagem e peça suporte a **luis@sbroggio.io**.
+**O plugin não foi testado no Cowork nativo**: foi verificado localmente por linha de comando com casos fictícios. A renderização dos botões e o comportamento no app dependem do ambiente. Se a instalação falhar, registre a mensagem e peça suporte pelo e-mail indicado no manual do produto.
 
 Separe os documentos por cliente, matéria e polo em uma pasta privada de trabalho, fora do código do plugin. A organização local não certifica sigilo: confira as condições do provedor antes de inserir dados. Use sempre a mesma pasta privada de trabalho para preservar o contexto, mantendo os casos e polos separados em subpastas. Depois da instalação, use `/arbitragem-empresarial-install` para configurar o caso.
 

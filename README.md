@@ -34,4 +34,4 @@ Custas e datas-limite saem de scripts locais (`arbitragem-empresarial-os/scripts
 
 Verificado localmente por linha de comando com casos fictícios; **não foi testado no Cowork nativo**.
 
-Suporte: **luis@sbroggio.io**.
+Suporte: pelo e-mail indicado no manual do produto e na licença.
