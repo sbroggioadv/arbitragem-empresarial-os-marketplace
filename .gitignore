@@ -1,0 +1,16 @@
+.DS_Store
+.aiox/
+.synapse/
+__pycache__/
+*.pyc
+*.log
+node_modules/
+dist/
+audit/
+reference/
+.planning/
+_planning/
+MEMORY.md
+.ai/
+private/
+.claude/settings.local.json

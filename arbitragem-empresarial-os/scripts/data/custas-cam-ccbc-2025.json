@@ -1,0 +1,521 @@
+{
+ "id": "custas-cam-ccbc-2025",
+ "descricao": "Regramento de Custas do CAM-CCBC 2025: tabelas e valores fixos usados por calc_arbitragem_custas.py",
+ "fonte": "context/packs/cam-ccbc-2025/custas.md",
+ "fonte_original": "https://www.ccbc.org.br/cam-ccbc-centro-arbitragem-mediacao/resolucao-de-disputas/arbitragem/regramento-de-custas-2025/",
+ "data_captura": "2026-10-02",
+ "vigencia_declarada": "item 01 (L189): em vigor a partir de 1o de novembro de 2025; a pagina capturada indica 03/11/2025 (divergencia registrada no PACK.md)",
+ "validade": "captura de 2026-10-02; nao certifica vigencia posterior: conferir na camara antes de usar",
+ "intervalo": "valor da causa positivo; tabelas expeditas so ate R$ 3.000.000,00 (item 54, L348)",
+ "valor_causa": {
+  "regra": "soma dos valores dos pedidos das partes; mera alegacao de improcedencia nao soma",
+  "ln": [
+   "L206",
+   "L207"
+  ]
+ },
+ "taxa_registro": {
+  "valor": "5500.00",
+  "ln": "L220",
+  "responsavel_ln": "L221",
+  "momento_ln": "L222"
+ },
+ "rateio_polos": {
+  "fracao": "0.5",
+  "adm_comum_ln": "L228",
+  "honorarios_comum_ln": "L289",
+  "adm_exp_ln": "L356",
+  "honorarios_exp_ln": "L375"
+ },
+ "divisao_trino": {
+  "presidente": "0.40",
+  "coarbitro": "0.30",
+  "ln": "L251"
+ },
+ "impugnacao_por_arbitro": {
+  "comum": {
+   "valor": "31250.00",
+   "ln": "L332"
+  },
+  "expedito": {
+   "valor": "12500.00",
+   "ln": "L405"
+  }
+ },
+ "esclarecimentos_expedito": {
+  "valor": "27500.00",
+  "ln": "L409"
+ },
+ "teto_expedito_unico": {
+  "valor": "132855.50",
+  "ln": "L390",
+  "alcance": "taxa de administracao + honorarios do arbitro unico do expedito (item 64)"
+ },
+ "emergencia": {
+  "total": "136800.00",
+  "ln": "L413",
+  "partes": [
+   {
+    "rubrica": "honorarios do arbitro de emergencia",
+    "valor": "104300.00",
+    "ln": "L415"
+   },
+   {
+    "rubrica": "taxas de administracao do CAM-CCBC",
+    "valor": "27500.00",
+    "ln": "L417"
+   },
+   {
+    "rubrica": "fundo de despesas",
+    "valor": "5000.00",
+    "ln": "L419"
+   }
+  ]
+ },
+ "limite_expedito": {
+  "valor": "3000000.00",
+  "custas_ln": "L348",
+  "custas_termo": "inferior a",
+  "regulamento": "context/packs/cam-ccbc-2025/regulamento.md",
+  "regulamento_ln": "L534",
+  "regulamento_termo": "nao exceda"
+ },
+ "ressalvas": [
+  {
+   "texto": "atualizacao por IPCA a cada 12 meses sobre pagamentos a arbitros e devolucoes, so para arbitragens iniciadas a partir de 01/01/2025; nao calculada",
+   "ln": [
+    "L560",
+    "L569"
+   ]
+  },
+  {
+   "texto": "o CAM-CCBC pode reavaliar o valor da causa a qualquer tempo",
+   "ln": [
+    "L212"
+   ]
+  },
+  {
+   "texto": "fundo de despesas e honorarios periciais nao entram na conta",
+   "ln": [
+    "L305",
+    "L340"
+   ]
+  },
+  {
+   "texto": "incidencia de tributos nao consta da fonte capturada: nao afirmada nem calculada",
+   "ln": []
+  }
+ ],
+ "tabelas": {
+  "adm_comum": {
+   "nome": "Tabela 1 — Taxa de Administração (procedimento comum)",
+   "ln_cabecalho": "L234",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "4000000",
+     "fixo": "144900",
+     "pct": null,
+     "base": null,
+     "ln": "L235"
+    },
+    {
+     "de": "4000001",
+     "ate": "10000000",
+     "fixo": "144900",
+     "pct": "0.28987736746185",
+     "base": "4000001",
+     "ln": "L236"
+    },
+    {
+     "de": "10000001",
+     "ate": "18000000",
+     "fixo": "162300",
+     "pct": "0.26088961973500",
+     "base": "10000001",
+     "ln": "L237"
+    },
+    {
+     "de": "18000001",
+     "ate": "50000000",
+     "fixo": "183200",
+     "pct": "0.23190187200815",
+     "base": "18000001",
+     "ln": "L238"
+    },
+    {
+     "de": "50000001",
+     "ate": "100000000",
+     "fixo": "257400",
+     "pct": "0.20291412428130",
+     "base": "50000001",
+     "ln": "L239"
+    },
+    {
+     "de": "100000001",
+     "ate": "150000000",
+     "fixo": "358900",
+     "pct": "0.14493873863425",
+     "base": "100000001",
+     "ln": "L240"
+    },
+    {
+     "de": "150000001",
+     "ate": "300000000",
+     "fixo": "431300",
+     "pct": "0.01449381896010",
+     "base": "150000001",
+     "ln": "L241"
+    },
+    {
+     "de": "300000001",
+     "ate": "500000000",
+     "fixo": "453100",
+     "pct": "0.00724690948005",
+     "base": "300000001",
+     "ln": "L242"
+    },
+    {
+     "de": "500000001",
+     "ate": "1000000000",
+     "fixo": "467600",
+     "pct": "0.00362350964335",
+     "base": "500000001",
+     "ln": "L243"
+    },
+    {
+     "de": "1000000001",
+     "ate": null,
+     "fixo": "485700",
+     "pct": "0.00181169991835",
+     "base": "1000000001",
+     "ln": "L244"
+    }
+   ]
+  },
+  "trino_comum": {
+   "nome": "Tabela 2 — Honorários do Tribunal Arbitral Trino (procedimento comum)",
+   "ln_cabecalho": "L255",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "2000000",
+     "fixo": "326100",
+     "pct": null,
+     "base": null,
+     "ln": "L256"
+    },
+    {
+     "de": "2000001",
+     "ate": "4000000",
+     "fixo": "326100",
+     "pct": "5.4352010722733700",
+     "base": "2000001",
+     "ln": "L257"
+    },
+    {
+     "de": "4000001",
+     "ate": "10000000",
+     "fixo": "434800",
+     "pct": "3.9133447720368300",
+     "base": "4000001",
+     "ln": "L258"
+    },
+    {
+     "de": "10000001",
+     "ate": "18000000",
+     "fixo": "669600",
+     "pct": "1.3044482573456100",
+     "base": "10000001",
+     "ln": "L259"
+    },
+    {
+     "de": "18000001",
+     "ate": "50000000",
+     "fixo": "774000",
+     "pct": "0.4348160857818700",
+     "base": "18000001",
+     "ln": "L260"
+    },
+    {
+     "de": "50000001",
+     "ate": "100000000",
+     "fixo": "913100",
+     "pct": "0.3913344772036830",
+     "base": "50000001",
+     "ln": "L261"
+    },
+    {
+     "de": "100000001",
+     "ate": "150000000",
+     "fixo": "1108800",
+     "pct": "0.2608896514691220",
+     "base": "100000001",
+     "ln": "L262"
+    },
+    {
+     "de": "150000001",
+     "ate": "300000000",
+     "fixo": "1239200",
+     "pct": "0.1739264343127480",
+     "base": "150000001",
+     "ln": "L263"
+    },
+    {
+     "de": "300000001",
+     "ate": "500000000",
+     "fixo": "1500100",
+     "pct": "0.1304448257345610",
+     "base": "300000001",
+     "ln": "L264"
+    },
+    {
+     "de": "500000001",
+     "ate": "1000000000",
+     "fixo": "1761000",
+     "pct": "0.1087040214454670",
+     "base": "500000001",
+     "ln": "L265"
+    },
+    {
+     "de": "1000000001",
+     "ate": null,
+     "fixo": "2304500",
+     "pct": "0.0869632171563739",
+     "base": "1000000001",
+     "ln": "L266"
+    }
+   ]
+  },
+  "unico_comum": {
+   "nome": "Tabela 3 — Honorários do Árbitro Único (procedimento comum)",
+   "ln_cabecalho": "L274",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "2000000",
+     "fixo": "130400",
+     "pct": null,
+     "base": null,
+     "ln": "L275"
+    },
+    {
+     "de": "2000001",
+     "ate": "4000000",
+     "fixo": "130400",
+     "pct": "2.1740804289093500",
+     "base": "2000001",
+     "ln": "L276"
+    },
+    {
+     "de": "4000001",
+     "ate": "10000000",
+     "fixo": "173900",
+     "pct": "1.5653379088147300",
+     "base": "4000001",
+     "ln": "L277"
+    },
+    {
+     "de": "10000001",
+     "ate": "18000000",
+     "fixo": "267800",
+     "pct": "0.5217793029382440",
+     "base": "10000001",
+     "ln": "L278"
+    },
+    {
+     "de": "18000001",
+     "ate": "50000000",
+     "fixo": "309600",
+     "pct": "0.1739264343127480",
+     "base": "18000001",
+     "ln": "L279"
+    },
+    {
+     "de": "50000001",
+     "ate": "100000000",
+     "fixo": "365200",
+     "pct": "0.1565337908814730",
+     "base": "50000001",
+     "ln": "L280"
+    },
+    {
+     "de": "100000001",
+     "ate": "150000000",
+     "fixo": "443500",
+     "pct": "0.1043558605876490",
+     "base": "100000001",
+     "ln": "L281"
+    },
+    {
+     "de": "150000001",
+     "ate": "300000000",
+     "fixo": "495700",
+     "pct": "0.0695705737250992",
+     "base": "150000001",
+     "ln": "L282"
+    },
+    {
+     "de": "300000001",
+     "ate": "500000000",
+     "fixo": "600000",
+     "pct": "0.0521779302938244",
+     "base": "300000001",
+     "ln": "L283"
+    },
+    {
+     "de": "500000001",
+     "ate": "1000000000",
+     "fixo": "704400",
+     "pct": "0.0434816085781870",
+     "base": "500000001",
+     "ln": "L284"
+    },
+    {
+     "de": "1000000001",
+     "ate": null,
+     "fixo": "921800",
+     "pct": "0.0347852868625496",
+     "base": "1000000001",
+     "ln": "L285"
+    }
+   ]
+  },
+  "esclarecimentos_comum": {
+   "nome": "Tabela 4 — Honorários adicionais para esclarecimentos (procedimento comum)",
+   "ln_cabecalho": "L317",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "10000000",
+     "fixo": "27500",
+     "pct": null,
+     "base": null,
+     "ln": "L318"
+    },
+    {
+     "de": "10000001",
+     "ate": "50000000",
+     "fixo": "38400",
+     "pct": null,
+     "base": null,
+     "ln": "L319"
+    },
+    {
+     "de": "50000001",
+     "ate": "150000000",
+     "fixo": "49400",
+     "pct": null,
+     "base": null,
+     "ln": "L320"
+    },
+    {
+     "de": "150000001",
+     "ate": "500000000",
+     "fixo": "60400",
+     "pct": null,
+     "base": null,
+     "ln": "L321"
+    },
+    {
+     "de": "500000001",
+     "ate": null,
+     "fixo": "71400",
+     "pct": null,
+     "base": null,
+     "ln": "L322"
+    }
+   ]
+  },
+  "adm_exp": {
+   "nome": "Tabela 5 — Taxa de Administração da Arbitragem Expedita",
+   "ln_cabecalho": "L364",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "1000000",
+     "fixo": "32900",
+     "pct": null,
+     "base": null,
+     "ln": "L365"
+    },
+    {
+     "de": "1000001",
+     "ate": "2000000",
+     "fixo": "32900",
+     "pct": "0.98825985",
+     "base": "1000001",
+     "ln": "L366"
+    },
+    {
+     "de": "2000001",
+     "ate": "3000000",
+     "fixo": "42800",
+     "pct": "0.98825985",
+     "base": "2000001",
+     "ln": "L367"
+    }
+   ]
+  },
+  "unico_exp": {
+   "nome": "Tabela 6 — Honorários do Árbitro Único da Arbitragem Expedita",
+   "ln_cabecalho": "L383",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "1000000",
+     "fixo": "49400",
+     "pct": null,
+     "base": null,
+     "ln": "L384"
+    },
+    {
+     "de": "1000001",
+     "ate": "2000000",
+     "fixo": "49400",
+     "pct": "1.5372931",
+     "base": "1000001",
+     "ln": "L385"
+    },
+    {
+     "de": "2000001",
+     "ate": "3000000",
+     "fixo": "64800",
+     "pct": "1.5372931",
+     "base": "2000001",
+     "ln": "L386"
+    }
+   ]
+  },
+  "trino_exp": {
+   "nome": "Tabela 7 — Honorários do Tribunal Arbitral Trino da Arbitragem Expedita",
+   "ln_cabecalho": "L396",
+   "faixas": [
+    {
+     "de": null,
+     "ate": "1000000",
+     "fixo": "131800",
+     "pct": null,
+     "base": null,
+     "ln": "L397"
+    },
+    {
+     "de": "1000001",
+     "ate": "2000000",
+     "fixo": "131800",
+     "pct": "4.099438018046",
+     "base": "1000001",
+     "ln": "L398"
+    },
+    {
+     "de": "2000001",
+     "ate": "3000000",
+     "fixo": "172800",
+     "pct": "4.099438018046",
+     "base": "2000001",
+     "ln": "L399"
+    }
+   ]
+  }
+ }
+}

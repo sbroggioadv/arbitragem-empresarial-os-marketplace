@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'arbitragem-empresarial-os carregado — advogado de uma parte; prazos e custos só com fonte local; revisão final pela skill revisao-final-arbitragem-empresarial; saídas sujeitas a revisão humana'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

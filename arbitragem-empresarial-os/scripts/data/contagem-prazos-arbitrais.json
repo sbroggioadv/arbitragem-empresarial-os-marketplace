@@ -1,0 +1,265 @@
+{
+ "id": "contagem-prazos-arbitrais",
+ "descricao": "Regras de contagem de prazo de cada regulamento e catalogo de prazos usados por calc_arbitragem_prazo.py. Calendario de recesso da camara e dias nao uteis da sede NAO estao aqui: sao sempre entrada.",
+ "data_captura": "2026-10-02",
+ "validade": "captura de 2026-10-02; nao certifica vigencia posterior",
+ "regimes": {
+  "cam-ccbc-2025": {
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "marco": "data do recebimento da comunicacao: a do comprovante de envio (via eletronica) ou de entrega (via fisica)",
+   "marco_ln": "L186",
+   "inicio": "primeiro dia util seguinte ao recebimento",
+   "inicio_ln": "L187",
+   "continuo": true,
+   "continuo_ln": "L187",
+   "prorrogacao": "vencimento em dia nao util no local da sede prorroga ao primeiro dia util seguinte; sem sede definida, dia util = expediente no CAM-CCBC pelo calendario oficial",
+   "prorrogacao_ln": "L188",
+   "recesso_suspende": true,
+   "recesso_ln": "L190",
+   "recesso_ressalva": "salvo acordo em contrario das partes",
+   "supletivo_dias": 10,
+   "supletivo_ln": "L192"
+  },
+  "camarb-2019": {
+   "fonte": "context/packs/camarb-2019/regulamento.md",
+   "marco": "data de entrega da correspondencia enviada pela Secretaria da CAMARB",
+   "marco_ln": "L45",
+   "inicio": "dia util subsequente a data de entrega",
+   "inicio_ln": "L45",
+   "continuo": true,
+   "continuo_ln": "L45",
+   "prorrogacao": "vencimento em feriado no local da arbitragem ou em dia sem expediente na CAMARB prorroga ao primeiro dia util seguinte; o curso nao se suspende nos dias sem expediente",
+   "prorrogacao_ln": "L45",
+   "recesso_suspende": false,
+   "recesso_ln": "L45",
+   "recesso_ressalva": "sem suspensao: dia de recesso e dia sem expediente (so adia o inicio e prorroga o vencimento)",
+   "supletivo_dias": 5,
+   "supletivo_ln": "L51"
+  },
+  "cam-b3-2026": {
+   "fonte": "context/packs/cam-b3-2026/regulamento.md",
+   "marco": "comunicacao realizada na data de envio ao endereco eletronico, de postagem na plataforma ou de recebimento no endereco fisico",
+   "marco_ln": "L41",
+   "inicio": "primeiro dia util seguinte a realizacao da comunicacao",
+   "inicio_ln": "L65",
+   "continuo": true,
+   "continuo_ln": "L65",
+   "prorrogacao": "vencimento em dia nao util prorroga ao primeiro dia util seguinte; dia util = dia com expediente na CAM",
+   "prorrogacao_ln": "L67, L69",
+   "recesso_suspende": true,
+   "recesso_ln": "L71",
+   "recesso_ressalva": "todos os prazos ficam suspensos durante o recesso da CAM",
+   "supletivo_dias": 7,
+   "supletivo_ln": "L77"
+  }
+ },
+ "prazos": [
+  {
+   "id": "ccbc-resposta",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 15,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L243",
+   "evento": "recebimento da notificacao da secretaria sobre o requerimento"
+  },
+  {
+   "id": "ccbc-coarbitros",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 15,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L278",
+   "evento": "recebimento do convite da secretaria para indicar arbitro"
+  },
+  {
+   "id": "ccbc-termo",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 30,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L408",
+   "evento": "recebimento da notificacao da secretaria para firmar o Termo"
+  },
+  {
+   "id": "ccbc-alegacoes-iniciais",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 30,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L447",
+   "evento": "data da reuniao para a assinatura do Termo",
+   "observacao": "salvo acordo ou determinacao em contrario"
+  },
+  {
+   "id": "ccbc-respostas-alegacoes",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 30,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L447",
+   "evento": "recebimento da notificacao sobre as alegacoes iniciais da contraparte",
+   "observacao": "salvo acordo ou determinacao em contrario"
+  },
+  {
+   "id": "ccbc-sentenca",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 60,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L464",
+   "evento": "recebimento pelos arbitros das alegacoes finais (ou notificacao do decurso do prazo)",
+   "observacao": "prazo do tribunal; prorrogavel por ate 60 dias (L465); Termo ou acordo podem fixar outro"
+  },
+  {
+   "id": "ccbc-esclarecimentos",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 15,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L492",
+   "evento": "recebimento da sentenca arbitral",
+   "observacao": "mostrar ao lado do art. 30 da Lei 9.307 (5 dias, salvo acordo)"
+  },
+  {
+   "id": "ccbc-manifestacao-esclarecimentos",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 15,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L493",
+   "evento": "recebimento da oportunidade facultada pelo tribunal"
+  },
+  {
+   "id": "ccbc-supletivo",
+   "regimes": [
+    "cam-ccbc-2025"
+   ],
+   "dias": 10,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-ccbc-2025/regulamento.md",
+   "ln": "L192",
+   "evento": "recebimento da comunicacao",
+   "observacao": "so na ausencia de prazo do Regulamento, do tribunal ou da secretaria"
+  },
+  {
+   "id": "camarb-resposta",
+   "regimes": [
+    "camarb-2019"
+   ],
+   "dias": 10,
+   "unidade": "continuos",
+   "fonte": "context/packs/camarb-2019/regulamento.md",
+   "ln": "L75",
+   "evento": "recebimento da notificacao da solicitacao de arbitragem"
+  },
+  {
+   "id": "camarb-supletivo",
+   "regimes": [
+    "camarb-2019"
+   ],
+   "dias": 5,
+   "unidade": "continuos",
+   "fonte": "context/packs/camarb-2019/regulamento.md",
+   "ln": "L51",
+   "evento": "entrega da correspondencia",
+   "observacao": "so depois de constituido o tribunal e sem prazo no Termo, do tribunal ou do Regulamento"
+  },
+  {
+   "id": "b3-resposta",
+   "regimes": [
+    "cam-b3-2026"
+   ],
+   "dias": 15,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-b3-2026/regulamento.md",
+   "ln": "L123",
+   "evento": "comunicacao da CAM sobre o requerimento"
+  },
+  {
+   "id": "b3-supletivo",
+   "regimes": [
+    "cam-b3-2026"
+   ],
+   "dias": 7,
+   "unidade": "continuos",
+   "fonte": "context/packs/cam-b3-2026/regulamento.md",
+   "ln": "L77",
+   "evento": "comunicacao",
+   "observacao": "so na ausencia de prazo do Regulamento ou do tribunal"
+  },
+  {
+   "id": "b3-impugnacao-arbitro-emergencia",
+   "regimes": [
+    "cam-b3-2026"
+   ],
+   "dias": 2,
+   "unidade": "uteis",
+   "fonte": "context/packs/cam-b3-2026/regulamento.md",
+   "ln": "L515",
+   "evento": "conhecimento do fato ou circunstancia que fundamenta a impugnacao",
+   "observacao": "dias uteis, sob pena de preclusao"
+  },
+  {
+   "id": "lei-art30-esclarecimentos",
+   "regimes": [
+    "cam-ccbc-2025",
+    "camarb-2019",
+    "cam-b3-2026"
+   ],
+   "dias": 5,
+   "unidade": "continuos",
+   "fonte": "context/lei-9307-1996.md",
+   "ln": "L562",
+   "evento": "recebimento da notificacao ou ciencia pessoal da sentenca",
+   "observacao": "salvo se outro prazo for acordado entre as partes (L564); a Lei nao fixa a forma de contagem: aplica-se a do regulamento escolhido"
+  },
+  {
+   "id": "lei-art22a-instituicao",
+   "regimes": [],
+   "dias": 30,
+   "unidade": "fora-do-regulamento",
+   "fonte": "context/lei-9307-1996.md",
+   "ln": "L433",
+   "evento": "efetivacao da decisao judicial de urgencia",
+   "observacao": "prazo ligado a medida judicial, antes da arbitragem: a regra de contagem nao esta no regulamento nem no context do plugin"
+  },
+  {
+   "id": "lei-art23-sentenca",
+   "regimes": [],
+   "dias": null,
+   "meses": 6,
+   "unidade": "fora-do-regulamento",
+   "fonte": "context/lei-9307-1996.md",
+   "ln": "L487",
+   "evento": "instituicao da arbitragem ou substituicao do arbitro",
+   "observacao": "so se nada foi convencionado; prazo em meses sem regra de contagem no context; regulamento, Termo ou acordo costumam fixar outro"
+  },
+  {
+   "id": "lei-art33-anulatoria",
+   "regimes": [],
+   "dias": 90,
+   "unidade": "fora-do-regulamento",
+   "fonte": "context/lei-9307-1996.md",
+   "ln": "L636",
+   "evento": "recebimento da notificacao da sentenca (parcial ou final) ou da decisao do pedido de esclarecimentos",
+   "observacao": "acao judicial: a contagem do regulamento nao a alcanca e a regra de contagem nao esta no context do plugin"
+  }
+ ]
+}

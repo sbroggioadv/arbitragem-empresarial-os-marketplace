@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "arbitragem-empresarial-os-marketplace",
+  "description": "Arbitragem Empresarial OS. Plugin de apoio ao advogado de uma parte, requerente ou requerida, em arbitragem empresarial com sede no Brasil, com prazos, custos e julgados ligados à fonte local.",
+  "owner": {
+    "name": "Sbroggio Advocacia & IA Combativa"
+  },
+  "plugins": [
+    {
+      "name": "arbitragem-empresarial-os",
+      "source": "./arbitragem-empresarial-os",
+      "description": "Apoio ao advogado de UMA parte (requerente ou requerida) em arbitragem empresarial sediada no Brasil: enquadramento, convenção, regulamento e versão (CAM-CCBC 2025, CAMARB 2019, CAM B3 2026), tribunal, prova, sentença e apoio judicial, com fonte local por prazo e custo e revisão humana.",
+      "author": {
+        "name": "Sbroggio Advocacia & IA Combativa"
+      }
+    }
+  ]
+}

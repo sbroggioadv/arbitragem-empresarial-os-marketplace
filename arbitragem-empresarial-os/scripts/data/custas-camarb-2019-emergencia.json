@@ -1,0 +1,54 @@
+{
+ "id": "custas-camarb-2019-emergencia",
+ "descricao": "Valores fixos da RA 06/20 da CAMARB (arbitro de emergencia). A tabela geral de custas da CAMARB nao foi incorporada: PENDENTE DE FONTE.",
+ "fonte": "context/packs/camarb-2019/arbitro-emergencia-ra-06-20.md",
+ "data_captura": "2026-10-02",
+ "vigencia_declarada": "a RA nao declara vigencia: confirmar na camara",
+ "validade": "conferir na camara antes de usar",
+ "aplicacao_ln": "L29",
+ "deposito": {
+  "total": "60000.00",
+  "ln": "L127",
+  "partes": [
+   {
+    "rubrica": "honorarios do arbitro de emergencia",
+    "valor": "40000.00",
+    "ln": "L129"
+   },
+   {
+    "rubrica": "taxas de administracao da CAMARB",
+    "valor": "15000.00",
+    "ln": "L131"
+   },
+   {
+    "rubrica": "adiantamento de despesas",
+    "valor": "5000.00",
+    "ln": "L133"
+   }
+  ]
+ },
+ "impugnacao_taxa": {
+  "valor": "5000.00",
+  "ln": "L137"
+ },
+ "ressalvas": [
+  {
+   "texto": "novos aportes de despesas podem ser pedidos",
+   "ln": [
+    "L135"
+   ]
+  },
+  {
+   "texto": "se extinto antes da decisao, o reembolso de parte do valor e decidido pela presidencia",
+   "ln": [
+    "L141"
+   ]
+  },
+  {
+   "texto": "honorarios e taxa podem ser aumentados",
+   "ln": [
+    "L143"
+   ]
+  }
+ ]
+}
